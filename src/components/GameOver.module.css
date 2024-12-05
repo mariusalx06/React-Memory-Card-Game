@@ -1,0 +1,97 @@
+.gameOver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+  z-index: 1;
+}
+
+.gameOver h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: #e1dec7;
+  margin: 0;
+}
+
+.gameOver p {
+  font-size: 2rem;
+  text-align: center;
+  color: #e1dec7;
+}
+
+.gameOver button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  background: none;
+  border: 2px solid #3cb371;
+  color: #3cb371;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s, color 0.2s;
+  box-shadow: 0 0 8px rgba(60, 179, 113, 0.4);
+}
+
+.gameOver button:hover {
+  background: #3cb371;
+  color: #e1dec7;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(60, 179, 113, 0.8);
+}
+.greenSpan {
+  color: #3cb371;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gameOver h2 {
+    font-size: 3rem;
+  }
+
+  .gameOver p {
+    font-size: 1.5rem;
+  }
+
+  .gameOver button {
+    font-size: 1.25rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gameOver h2 {
+    font-size: 2.5rem;
+  }
+
+  .gameOver p {
+    font-size: 1.2rem;
+  }
+
+  .gameOver button {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

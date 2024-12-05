@@ -1,0 +1,77 @@
+.gameContainer {
+  max-width: 45rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 128, 0.6);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.gameBoard {
+  margin: 4rem 0rem;
+}
+
+.gameBoard ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.timer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.resetButton {
+  color: white;
+  background: transparent;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.resetButton:hover {
+  background-color: #3cb371;
+}
+
+.resetButton:focus {
+  outline: none;
+  border-color: #3cb371;
+}
+
+@media (max-width: 768px) {
+  .gameContainer {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .gameBoard {
+    margin: 2rem 0rem;
+  }
+
+  .gameBoard ol {
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .gameContainer {
+    padding: 1rem;
+  }
+
+  .gameBoard {
+    margin: 1rem 0rem;
+  }
+
+  .gameBoard ol {
+    gap: 0.5rem;
+  }
+}
