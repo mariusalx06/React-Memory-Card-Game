@@ -1,4 +1,4 @@
-.gameOver {
+.startGame {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-.gameOver h2 {
+.startGame h2 {
   font-family: "Caprasimo", cursive;
   font-size: 4rem;
   text-align: center;
@@ -22,15 +22,15 @@
   margin: 0;
 }
 
-.gameOver p {
+.startGame p {
   font-size: 2rem;
   text-align: center;
   color: #e1dec7;
 }
 
-.gameOver button {
+.startGame button {
   display: block;
-  margin: 0 auto;
+  margin-top: 1rem;
   font-size: 1.5rem;
   background: none;
   border: 2px solid #8174a0;
@@ -42,14 +42,34 @@
   box-shadow: 0 0 8px rgba(129, 116, 160, 0.4);
 }
 
-.gameOver button:hover {
+.startGame button:hover {
   background: #8174a0;
   color: #e1dec7;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(129, 116, 160, 0.8);
 }
 .greenSpan {
-  color: #8174a0;
+  color: #3cb371;
+}
+
+.startGame input {
+  font: inherit;
+  font-size: 1rem;
+  width: 10rem;
+  border: 1px solid #e1dec7;
+  border-radius: 8px;
+  padding: 0.5rem;
+  animation: pulse-text 2s infinite;
+  background-color: #e1dec7;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.errorMessage {
+  color: red !important;
+  font-size: 14px !important;
+  margin-top: 10px !important;
+  font-weight: 700;
 }
 
 @keyframes pop-in {
@@ -67,30 +87,30 @@
 }
 
 @media screen and (max-width: 768px) {
-  .gameOver h2 {
+  .startGame h2 {
     font-size: 3rem;
   }
 
-  .gameOver p {
+  .startGame p {
     font-size: 1.5rem;
   }
 
-  .gameOver button {
+  .startGame button {
     font-size: 1.25rem;
     padding: 0.4rem 0.8rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .gameOver h2 {
+  .startGame h2 {
     font-size: 2.5rem;
   }
 
-  .gameOver p {
+  .startGame p {
     font-size: 1.2rem;
   }
 
-  .gameOver button {
+  .startGame button {
     font-size: 1rem;
     padding: 0.3rem 0.6rem;
   }

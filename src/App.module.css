@@ -3,13 +3,18 @@
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background-color: rgba(0, 0, 128, 0.6);
+  background-color: rgba(99, 85, 124, 0.7);
   backdrop-filter: blur(1px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
+  min-height: 670px;
 }
 
 .gameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 4rem 0rem;
 }
 
@@ -23,27 +28,29 @@
   padding: 0;
 }
 .timer {
+  color: #e1dec7;
   margin-top: 2rem;
   text-align: center;
 }
 
 .resetButton {
-  color: white;
-  background: transparent;
+  color: #333333;
+  background: #e1dec7;
   font-size: 1rem;
   padding: 8px 15px;
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 700;
 }
 .resetButton:hover {
-  background-color: #3cb371;
+  background-color: #ffd2a0;
 }
 
 .resetButton:focus {
   outline: none;
-  border-color: #3cb371;
+  border-color: #ffd2a0;
 }
 
 @media (max-width: 768px) {

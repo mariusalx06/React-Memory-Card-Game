@@ -14,18 +14,17 @@
   justify-content: center;
   padding: 10px 15px;
   min-width: 50%;
-  border-color: #3cb371;
   animation: pulse 2s infinite ease-in-out;
-  border: 1px solid #3cb371;
+  border: 1px solid #a888b5;
   width: 100%;
   box-sizing: border-box;
   gap: 10px;
 }
 
 .player p {
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #e1dec7;
   text-align: center;
 }
 
@@ -33,11 +32,11 @@
   font: inherit;
   font-size: 1rem;
   width: 10rem;
-  border: 1px solid #3cb371;
+  border: 1px solid #a888b5;
   border-radius: 8px;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #3cb371;
+  background-color: #e1dec7;
   text-align: center;
   text-transform: uppercase;
 }
@@ -51,7 +50,6 @@
   display: inline-block;
   width: 10rem;
   font-size: 1rem;
-  color: #3cb371 !important;
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -62,29 +60,30 @@
 }
 
 .playerButton {
-  color: white;
-  background: transparent;
+  color: #333333;
+  background: #e1dec7;
   font-size: 1rem;
-  padding: 8px 15px;
+  padding: 4px 8px;
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-left: 20px;
+  font-weight: 700;
 }
 
 .playerButton:hover {
-  background-color: #3cb371;
+  background-color: #ffd2a0;
 }
 
 .playerButton:focus {
   outline: none;
-  border-color: #3cb371;
+  border-color: #a888b5;
 }
 
 .player input:focus {
   outline: none;
-  border-color: rgba(0, 0, 128, 0.6);
+  border-color: #a888b5;
 }
 
 @media (max-width: 768px) {
@@ -142,27 +141,27 @@
 
 @keyframes pulse {
   0% {
-    border-color: #90ee90;
-    box-shadow: 0 0 0 0 rgba(180, 255, 180, 0.4);
+    border-color: #ffd2a0;
+    box-shadow: 0 0 0 0 rgba(99, 85, 124, 0.7);
   }
   50% {
-    border-color: #3cb371;
-    box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
+    border-color: #efb6c8;
+    box-shadow: 0 0 0 0.5rem rgba(255, 185, 220, 0.3);
   }
   100% {
-    border-color: #90ee90;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
+    border-color: #ffd2a0;
+    box-shadow: 0 0 0 0 rgba(99, 85, 124, 0.7);
   }
 }
 
 @keyframes pulse-text {
   0% {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
   50% {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
   }
   100% {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
