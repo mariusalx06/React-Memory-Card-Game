@@ -24,7 +24,6 @@ export default function App() {
   const [flipped, setFlipped] = useState([]);
   const [winner, setWinner] = useState(false);
   const [timer, setTimer] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
   const [scores, setScores] = useState([]);
   const [bestScore, setBestScore] = useState(null);
   const [currentPlayer, setCurrentPlayer] = useState("");
@@ -108,7 +107,7 @@ export default function App() {
       }
       setWinner(true);
     }
-  }, [cards, timer, winner, intervalId, bestScore, currentPlayer]);
+  }, [cards, timer, winner, bestScore, currentPlayer]);
 
   function handlePlayerNameChange(newName) {
     setCurrentPlayer(newName);
