@@ -21,11 +21,6 @@
   transform: rotateY(180deg);
 }
 
-.cardButton:hover {
-  box-shadow: 0 0 6px 2px rgba(255, 210, 160, 0.7);
-  transform: scale(1.05);
-}
-
 .cardButton:disabled {
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.7);
   transform: scale(1);

@@ -10,15 +10,16 @@ export default function GameBoard(props) {
               className={`${styles.cardButton} ${
                 card.isMatched ? styles.cardComplete : ""
               }`}
-              onClick={() => props.onFlip(card.id)}
-              disabled={card.isMatched}
+              disabled={card.isMatched || card.isFlipped}
             >
               {card.value}
             </button>
           ) : (
             <button
               className={styles.cardButton}
-              onClick={() => props.onFlip(card.id)}
+              onClick={(e) => {
+                props.onFlip(card.id);
+              }}
             ></button>
           )}
         </li>
